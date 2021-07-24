@@ -1,0 +1,15 @@
+/Users/rohanxyzg/Desktop/samita/mc/bin/Debug/net5.0/mc.deps.json
+/Users/rohanxyzg/Desktop/samita/mc/bin/Debug/net5.0/mc.runtimeconfig.json
+/Users/rohanxyzg/Desktop/samita/mc/bin/Debug/net5.0/mc.runtimeconfig.dev.json
+/Users/rohanxyzg/Desktop/samita/mc/bin/Debug/net5.0/mc.dll
+/Users/rohanxyzg/Desktop/samita/mc/bin/Debug/net5.0/ref/mc.dll
+/Users/rohanxyzg/Desktop/samita/mc/bin/Debug/net5.0/mc.pdb
+/Users/rohanxyzg/Desktop/samita/mc/obj/Debug/net5.0/mc.csproj.AssemblyReference.cache
+/Users/rohanxyzg/Desktop/samita/mc/obj/Debug/net5.0/mc.GeneratedMSBuildEditorConfig.editorconfig
+/Users/rohanxyzg/Desktop/samita/mc/obj/Debug/net5.0/mc.AssemblyInfoInputs.cache
+/Users/rohanxyzg/Desktop/samita/mc/obj/Debug/net5.0/mc.AssemblyInfo.cs
+/Users/rohanxyzg/Desktop/samita/mc/obj/Debug/net5.0/mc.csproj.CoreCompileInputs.cache
+/Users/rohanxyzg/Desktop/samita/mc/obj/Debug/net5.0/mc.dll
+/Users/rohanxyzg/Desktop/samita/mc/obj/Debug/net5.0/ref/mc.dll
+/Users/rohanxyzg/Desktop/samita/mc/obj/Debug/net5.0/mc.pdb
+/Users/rohanxyzg/Desktop/samita/mc/obj/Debug/net5.0/mc.genruntimeconfig.cache
