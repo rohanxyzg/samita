@@ -15,7 +15,7 @@ namespace Samita.CodeAnalysis
         EndOfFileToken,
 
         // Expressions
-        NumberExpression,
+        LiteralExpression,
         BinaryExpression,
         ParenthesizedExpression
     }
