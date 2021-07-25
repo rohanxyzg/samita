@@ -2,6 +2,7 @@ using System.Collections.Generic;
 
 namespace Samita.CodeAnalysis
 {
+
     internal sealed class Parser
     {
         private readonly SyntaxToken[] _tokens;
@@ -70,7 +71,7 @@ namespace Samita.CodeAnalysis
             
             while(true)
             {
-                var precedence = GetBinaryOperatorPrecedence(Current.Kind);
+                var precedence = Current.Kind.GetBinaryOperatorPrecedence();
                 if(precedence == 0 || precedence <= parentPrecedence)
                     break;
                 
@@ -81,24 +82,6 @@ namespace Samita.CodeAnalysis
 
             return left;
         }
-
-        private static int GetBinaryOperatorPrecedence(SyntaxKind kind){
-            
-            switch(kind)
-            {
-                case SyntaxKind.StarToken:
-                case SyntaxKind.SlashToken:
-                    return 2;
-                    
-                case SyntaxKind.PlusToken:
-                case SyntaxKind.MinusToken:
-                    return 1;
-                
-                default:
-                    return 0;
-            }
-        }
-       
 
         private ExpressionSyntax ParsePrimaryExpression()
         {
