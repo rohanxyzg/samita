@@ -5,11 +5,11 @@ using Samita.CodeAnalysis;
 
 namespace Samita
 {
-    class Program
+    internal static class Program
     {
-        static void Main(string[] args)
+        private static void Main()
         {
-            bool showTree = false;
+            var showTree = false;
             while(true){
                 Console.Write("> ");
                 var line = Console.ReadLine();
@@ -31,10 +31,9 @@ namespace Samita
 
                 if(showTree)
                 {
-                    var color = Console.ForegroundColor;
                     Console.ForegroundColor = ConsoleColor.DarkGray;
                     PrettyPrint(syntaxTree.Root);
-                    Console.ForegroundColor = color;
+                    Console.ResetColor();
                 }
             
                 if (!syntaxTree.Diagnostics.Any())
@@ -45,13 +44,12 @@ namespace Samita
                 }
                 else
                 {
-                    var color = Console.ForegroundColor;
                     Console.ForegroundColor = ConsoleColor.DarkRed;
                     foreach (var diagnostic in syntaxTree.Diagnostics)
                     {
                         Console.WriteLine(diagnostic);
                     }
-                    Console.ForegroundColor = color;
+                    Console.ResetColor();
                 }
             }
 
@@ -72,7 +70,7 @@ namespace Samita
             }
             Console.WriteLine();
 
-            indent += isLast ? "    " : "│   ";
+            indent += isLast ? "   " : "│   ";
 
             var lastChild = node.GetChildren().LastOrDefault();
 
