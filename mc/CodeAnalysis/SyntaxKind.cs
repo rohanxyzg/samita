@@ -17,7 +17,8 @@ namespace Samita.CodeAnalysis
         // Expressions
         LiteralExpression,
         BinaryExpression,
-        ParenthesizedExpression
+        ParenthesizedExpression,
+        UnaryExpression
     }
 }
 
