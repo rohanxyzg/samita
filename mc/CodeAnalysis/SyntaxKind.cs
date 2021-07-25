@@ -1,7 +1,8 @@
 namespace Samita.CodeAnalysis
 {
-    enum SyntaxKind
+    public enum SyntaxKind
     {
+        // Tokens
         NumberToken,
         WhiteSpaceToken,
         PlusToken,
@@ -12,7 +13,9 @@ namespace Samita.CodeAnalysis
         ClosedParanthesisToken,
         BadToken,
         EndOfFileToken,
-        NumberExpression,
+
+        // Expressions
+        LiteralExpression,
         BinaryExpression,
         ParenthesizedExpression
     }

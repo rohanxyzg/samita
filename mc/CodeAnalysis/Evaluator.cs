@@ -3,7 +3,7 @@ using System;
 namespace Samita.CodeAnalysis
 {
 
-    class Evaluator
+    public sealed class Evaluator
     {
         private readonly ExpressionSyntax _root;
         public Evaluator(ExpressionSyntax root)
@@ -18,7 +18,7 @@ namespace Samita.CodeAnalysis
 
         private int EvaluateExpression(ExpressionSyntax node)
         {
-            if(node is NumberExpressionSyntax n)
+            if(node is LiteralExpressionSyntax n)
                 return (int) n.NumberToken.Value;
             
             if(node is BinaryExpressionSyntax b)

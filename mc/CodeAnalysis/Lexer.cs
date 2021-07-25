@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 namespace Samita.CodeAnalysis
 {
-    class Lexer
+    internal sealed class Lexer
     {
         private readonly string _text;
         private int _position;
